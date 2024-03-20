@@ -5,6 +5,10 @@ export default function Homepage({ history }) {
         e.preventDefault()
         history.push('/login')
     }
+    const handleOnclick = () => {
+        window.Toaster.postMessage('Message from WebView');
+
+    }
 
     return (
         <div className='container maint-cnt'>
@@ -27,7 +31,8 @@ export default function Homepage({ history }) {
                     </h1>
                 </div>
 
-                <a href="/#" onClick={e => enterSite(e)} className="mainBtn">
+                {/* <a href="/#" onClick={e => enterSite(e)} className="mainBtn"> */}
+                <a href="/#" onClick={handleOnclick} className="mainBtn">
                     <svg width="277" height="62">
                         <defs>
                             <linearGradient id="grad1">
@@ -38,7 +43,9 @@ export default function Homepage({ history }) {
                         <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
                     </svg>
                     <span >Get Started!</span>
+                    
                 </a>
+                {/* <button onClick={handleOnclick}>Debug</button> */}
             </div>
         </div>
     )
