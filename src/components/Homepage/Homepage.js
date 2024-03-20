@@ -12,15 +12,15 @@ export default function Homepage({ history }) {
 
     return (
         <div className='container maint-cnt'>
-            <div className="header-nav">
+            {/* <div className="header-nav">
                 <span className="mytext1"> Unique Travels </span>
             </div>
             
             <div className="">
-            </div>
+            </div> */}
 
             <div className="container">
-                <div className="slogan">
+                {/* <div className="slogan">
                     <h1>
                         <span>always Travel</span>
                         <div className="message">
@@ -29,10 +29,10 @@ export default function Homepage({ history }) {
                             <div className="word3">with a smile</div>
                         </div>
                     </h1>
-                </div>
+                </div> */}
 
                 {/* <a href="/#" onClick={e => enterSite(e)} className="mainBtn"> */}
-                <a href="/#" onClick={handleOnclick} className="mainBtn">
+                {/* <a href="/#" onClick={handleOnclick} className="mainBtn">
                     <svg width="277" height="62">
                         <defs>
                             <linearGradient id="grad1">
@@ -44,8 +44,8 @@ export default function Homepage({ history }) {
                     </svg>
                     <span >Get Started!</span>
                     
-                </a>
-                {/* <button onClick={handleOnclick}>Debug</button> */}
+                </a> */}
+                <button width="277" height="62" onClick={handleOnclick}>Debug</button>
             </div>
         </div>
     )
