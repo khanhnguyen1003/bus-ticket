@@ -5,18 +5,22 @@ export default function Homepage({ history }) {
         e.preventDefault()
         history.push('/login')
     }
+    const handleOnclick = () => {
+        window.Toaster.postMessage('Message from WebView');
+
+    }
 
     return (
         <div className='container maint-cnt'>
-            <div className="header-nav">
+            {/* <div className="header-nav">
                 <span className="mytext1"> Unique Travels </span>
             </div>
             
             <div className="">
-            </div>
+            </div> */}
 
             <div className="container">
-                <div className="slogan">
+                {/* <div className="slogan">
                     <h1>
                         <span>always Travel</span>
                         <div className="message">
@@ -25,9 +29,10 @@ export default function Homepage({ history }) {
                             <div className="word3">with a smile</div>
                         </div>
                     </h1>
-                </div>
+                </div> */}
 
-                <a href="/#" onClick={e => enterSite(e)} className="mainBtn">
+                {/* <a href="/#" onClick={e => enterSite(e)} className="mainBtn"> */}
+                {/* <a href="/#" onClick={handleOnclick} className="mainBtn">
                     <svg width="277" height="62">
                         <defs>
                             <linearGradient id="grad1">
@@ -38,7 +43,9 @@ export default function Homepage({ history }) {
                         <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
                     </svg>
                     <span >Get Started!</span>
-                </a>
+                    
+                </a> */}
+                <button width="277" height="62" onClick={handleOnclick}>Debug</button>
             </div>
         </div>
     )
